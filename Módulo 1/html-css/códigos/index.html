@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Códigos e Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Códigos / Pré-Formatações</h2>
+    <p>Podemos introduzir uma linha de código como <code>GameObject.GetComponent()</code> marcando com a tag Code</p>
+    <pre>
+        <code>
+public class GetComponentExample : MonoBehaviour
+{
+    public GameObject otherGameObject;
+
+    void Start()
+    {
+        HingeJoint hinge = otherGameObject.GetComponent<HingeJoint>();
+
+        if (hinge != null)
+        {
+            hinge.useSpring = false;
+        }
+    }
+}
+        </code>
+    </pre><!--A tag pre se refere a um texto pré formatado, onde ele vai manter a formatação que estiver no editor, inclusive os espaçamentos em branco-->
+</body>
+</html>
