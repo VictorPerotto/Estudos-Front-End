@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Este site possui imagens dinâmicas, acesse pelo seu celular ou diminua o tamanho do seu navegador para testar</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Images/paisagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Images/paisagem-m.jpg" type="image/jpg">
+        <img src="Images/paisagem-g.jpg" alt="Uma paisagem">
+        <!--Temos de prestar atenção na ordem dos sources, aqui estamos fazendo de uma maneira crescente, da menor imagem para a maior
+        a primeira imagem aparece até um tamanho de tela máximo de 750px, após esse tamanho ser alcançado ela passa para a próxima imagem
+        a segunda imagem até um máximo de 1050px após esse tamanho ela passa para a próxima imagem que é a de maior tamanho-->
+    </picture>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="Images/paisagem-g.jpg" type="image/jpg">
+        <source media="(min-width: 750px)" srcset="Images/paisagem-m.jpg" type="image/jpg">
+        <img src="Images/paisagem-p.jpg" alt="Uma paisagem">
+        <!--Também podemos fazer da forma decrescente onde vamos da maior imagem até a menor dizemos para a primeira imagem que para ela aparecer precisa ter um tamanho de tela de no minimo 1050 px
+        caso não tenha ela precisa ter um tamanho minimo de 750px para aparecer a imagem média
+        caso nenhum dos tamanhos atenda ao esperado ele ira para a ultima imagem que é a menor de todas-->
+    </picture>
+    
+    <h1>Áudios</h1>
+    <p>Também podemos colocar áudios em nossos sites, que dal escutar?</p>
+    <audio preload="metadata" controls><!--Preload representa o tipo de pré carregamento que o áudui vai ter, metadata preserva as infos basicas, auto já baixa todas antes do play e none nenhuma informação é baixada
+    controls para aparecerem os controles do reprodutor de audio (pause, play, volume, etc...)-->
+        <source src="audios/Music.mp3" type="audio/mpeg">
+        <source src ="audios/Music.ogg" type="audio/ogg">
+        <p>Seu navegador não possui nenhum reprodutor de áudio</p>
+        <!--Primeiramente é tentando reproduzir o audio MP3, caso o navegador não consiga ele reproduz o OGG e caso não consiga a menagem é exibida na tela-->
+    </audio>
+</body>
+</html>

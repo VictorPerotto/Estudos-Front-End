@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Códigos e Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Códigos / Pré-Formatações</h2>
+    <p>Podemos introduzir uma linha de código como <code>GameObject.GetComponent()</code> marcando com a tag Code</p>
+    <pre>
+        <code>
+public class GetComponentExample : MonoBehaviour
+{
+    public GameObject otherGameObject;
+
+    void Start()
+    {
+        HingeJoint hinge = otherGameObject.GetComponent<HingeJoint>();
+
+        if (hinge != null)
+        {
+            hinge.useSpring = false;
+        }
+    }
+}
+        </code>
+    </pre><!--A tag pre se refere a um texto pré formatado, onde ele vai manter a formatação que estiver no editor, inclusive os espaçamentos em branco-->
+    <h2>Citações simples</h2>
+    <p>Como diria fulano <q>Ciclano é muito chato :o</q></p>
+
+    <h2>Citações completas</h2>
+    <p>Como disse Mauricio Samy em seu livro fundamentos de HTML</p>
+    <p><blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=1&dq=livro+html&printsec=frontcover">
+        Palavras ou termos cujo significado deva ser destacado são grafados em itálico
+    </blockquote></p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS</bdo></p>
+</body>
+</html>

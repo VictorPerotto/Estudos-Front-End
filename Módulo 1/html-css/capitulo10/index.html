@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <h2>Links externos</h2>
+    <p>Podemos utilizar de links externos em nossos sites a partir da tag &lt;a&gt; de âncora.</p> 
+    <p>Podemos colocar um link para o canal do <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Curso em vídeo</a> por exemplo.</p> <!--Utilizamos o target para que a aba aberta não sobreponha a do nosso site, é sempre recomendado quando estamos referenciando sites externos ao nosso--> 
+    <p>Podemos colocar um link para o canal do <a href="https://www.youtube.com/@CursoemVideo">Curso em vídeo</a> por exemplo, mas agora sobrepondo nossa página.</p> 
+
+    <h2>Links internos</h2>
+    <p>Você pode colocar links internos para outras páginas dentro do seu próprio site</p>
+    <p>Para acessar a segunda página clique <a href="pag002.html" rel="next">aqui.</a></p>
+    <p>Acesse também nossa página de notícias <a href="noticias/pag003.html" rel="next">aqui.</a></p><!--Novamente usamos o REL para referenciar o que está pagina é, no caso usamos next para dizer que é uma próxima página, e usamos prev para dizer que é uma página anterior-->
+    <p>Você também pode ter acesso ao download do meu currículo pelos links abaixo</p>
+    <ul>
+        <li>Download em <a href="documents/CurriculoVictor.pdf" download="CurriculoVictor.pdf" type="application/pdf" >PDF</a></li>
+        <li>Download em <a href="documents/CurriculoVictor.zip" download="CurriculoVictor.zip" type="application/zip">ZIP</a></li>
+    </ul><!--para inserirmos um documento para download primeiro damos a referencia dele, depois colocamos em download qual arquivo queremos que seja baixado e em seguida o tipo do arquivo, podemos a lista com as referencias para os tipos de arquivos em: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+</body>
+</html>
