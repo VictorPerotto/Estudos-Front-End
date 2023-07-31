@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        . = class
+        # = id
+        : = pseudo-class
+        > = children
+        :: = pseudo-element
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        a::after{
+            color: lightgray;
+            content: " [link]";
+        }
+
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links importantes</h1>
+    <ul>
+        <li><a href="https://github.com/VictorPerotto" target="_blank" rel="external">Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCNsi1sskGkssoU1OYgyTifQ" target="_blank" rel="external">Youtube</a></li>
+    </ul>
+</body>
+</html>

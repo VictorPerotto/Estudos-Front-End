@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*
+usamos a # para nos referirmos ao ID (pode ter apenas um elemento por documento HTML)
+usamos o . para nos referirmos a classe (pode conter varios elementos no mesmo documento)
+
+ID é um identificador único, apenas um elemento possui tais caracteristicas
+Class usamos para identificar um grupo, uma classe de elementos com o mesmo sentido
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8F5AF5;
+}
+
+h1{
+    color:#452B75;
+}
+
+p{
+    text-align: justify;
+}
+
+h1#main-text{
+    text-align: center;
+}
+
+.titulo{
+    color:#c451db;
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red;
+}

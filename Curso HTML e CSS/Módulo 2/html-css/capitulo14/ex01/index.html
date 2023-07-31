@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*safe combination para não ter erro caso o dispositivo não contenha a fonte especifica*/
+            /*
+            tamanhos absolutos
+            cm, mm, in(inche),px(pixel),pt
+
+            tamanhos relativos
+            em(relativo ao tamanho do M), ex(relativo ao tamanho do X), %
+
+            recomendado sempre usar EM(primeira opção sempre, por ser relativo se adapta melhor perante os dispositivos) ou PX(porem pode variar dependendo do dispositivo)
+
+            */
+            font-size: 1em;
+        }
+        h1{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 3em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2{
+            /*shorthand das fontes, sempre nessa ordem
+            font-style > font-weight > font-size > font-family*/
+            font: italic lighter 3em Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font: 2em Arial, Helvetica, sans-serif; 
+            /*representação de uma fonte sem estilo e sem pesos diferentes*/
+        }
+    </style>
+    <title>Fontes</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum amet iste cumque. Ullam ut ab magnam qui, harum voluptatum corrupti molestiae nesciunt ipsam ratione quibusdam dolorum vel in nihil eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sunt labore corrupti reprehenderit quibusdam, esse nobis qui tempora, ducimus, soluta dolorem perspiciatis unde ipsam atque aliquam quod consequuntur! Debitis, excepturi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vero tenetur quidem distinctio nobis blanditiis minima optio? Laboriosam quaerat aspernatur, hic animi voluptatibus ex, dolorem dolor fugiat delectus tempora quibusdam?</p>
+    <h2>Titulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero quidem sequi necessitatibus temporibus, sunt eius rerum debitis rem, adipisci nihil deleniti, ratione officia voluptatibus officiis consequatur ut recusandae! Facilis.</p>
+</body>
+</html>
