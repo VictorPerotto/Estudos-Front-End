@@ -9,23 +9,31 @@
         border: 2px solid black;
         border-radius: 10px;
         background-color: lightgray;
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
     }
     
     div#s1{
         background-image: url(images/pattern001.png);
+        background-repeat: no-repeat;
+        /*
+        no-repeat = sem repetição
+        repeat-x = repetição no eixo X
+        repeat-y = repetição no Y
+        repeat = padrão, repete em todas direções*/
     }
     
     div#s2{
-        background-image: url(images/wallpaper002.jpg);
+        background-image: url(images/wallpaper003.jpg);
+        background-position: center right;
+        /*definimos 2 posições para qual parte da imagem queremos, podemos usar left, right, top, bottom e center*/
     }
     
     div#s3{
         background-image: url(images/pattern003.png);
     }
     </style>
-    <title>Teste de imagem de fundo</title>
+    <title>Posição e repetição</title>
 </head>
 <body>
     <div class="square" id="s1">
